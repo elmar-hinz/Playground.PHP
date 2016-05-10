@@ -7,6 +7,31 @@ class ArrayTest extends \PHPUnit_Framework_TestCase
 	/**
 	 * @test
 	 */
+	public function test_array_intersect_key() {
+		$order = [
+			'alpha' => 'alpha',
+			'beta' => 'beta',
+			'gamma' => 'gamma',
+			'delate' => 'delate',
+		];
+		$selection = [
+			'delate' => 'd',
+			'beta' => 'b',
+			'gamma' => 'g',
+		];
+		$expected = [
+			'beta' => 'beta',
+			'gamma' => 'gamma',
+			'delate' => 'delate',
+		];
+		$result = array_intersect_key($order, $selection);
+		$this->assertSame($expected, $result);
+	}
+
+
+	/**
+	 * @test
+	 */
 	public function returnReferenceToReferenceKeepsSameArray() {
 		$a = [1, 2];
 		$r =& $this->returnByReference($a);
