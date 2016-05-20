@@ -1,3 +1,29 @@
+A billion objects test
+======================
+
+PHP5
+----
+
+::
+
+    1.000.000 times $objects[] = new A():                     326.168060
+    1.000.000 times $objects[] = new B() extends A:           325.504065
+    1.000.000 times $objects[] = new C() with constructor:    465.257883
+    1.000.000 times $objects[] = new V() with variable:       366.883039
+    1.000.000 times $objects[] = new I(i++) uniqe identity:   670.026064
+    1.000.000 times array_push($objects, new A()):            3143.904924
+
+PHP7
+----
+
+::
+
+    1.000.000 times $objects[] = new A():                     136.203051
+    1.000.000 times $objects[] = new B() extends A:           127.069950
+    1.000.000 times $objects[] = new C() with constructor:    197.970152
+    1.000.000 times $objects[] = new V() with variable:       136.150837
+    1.000.000 times $objects[] = new I(i++) uniqe identity:   233.019829
+    1.000.000 times array_push($objects, new A()):            208.152056
 
 A thousand classes test
 =======================

@@ -11,7 +11,7 @@ class PerformanceTestCase extends \PHPUnit_Framework_TestCase
 		$start = microtime(true);
 		$callback();
 		$stop = microtime(true);
-		return $stop - $start;
+		return 1000 * ($stop - $start);
 	}
 
 	protected static function newReport($file = "Reports/Report.txt")
