@@ -1,4 +1,10 @@
 {
+    "autoload": {
+        "psr-4" : {
+            "ElmarHinz\\Tests\\": "Tests/",
+            "ElmarHinz\\": "Classes/"
+        }
+    },
     "require": {
         "jaz303/phake": "^0.6.0",
         "phpunit/phpunit": "^5.3"
