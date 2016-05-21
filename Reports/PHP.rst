@@ -6,24 +6,24 @@ PHP5
 
 ::
 
-    1.000.000 times $objects[] = new A():                     326.168060
-    1.000.000 times $objects[] = new B() extends A:           325.504065
-    1.000.000 times $objects[] = new C() with constructor:    465.257883
-    1.000.000 times $objects[] = new V() with variable:       366.883039
-    1.000.000 times $objects[] = new I(i++) uniqe identity:   670.026064
-    1.000.000 times array_push($objects, new A()):            3143.904924
+    1.000.000 times $objects[] = new A():                      332.08 milliseconds
+    1.000.000 times $objects[] = new B() extends A:            336.15 milliseconds
+    1.000.000 times $objects[] = new C() with constructor:     480.02 milliseconds
+    1.000.000 times $objects[] = new V() with variable:        382.93 milliseconds
+    1.000.000 times $objects[] = new I(i++) uniqe identity:    683.41 milliseconds
+    1.000.000 times array_push($objects, new A()):            3294.01 milliseconds
 
 PHP7
 ----
 
 ::
 
-    1.000.000 times $objects[] = new A():                     136.203051
-    1.000.000 times $objects[] = new B() extends A:           127.069950
-    1.000.000 times $objects[] = new C() with constructor:    197.970152
-    1.000.000 times $objects[] = new V() with variable:       136.150837
-    1.000.000 times $objects[] = new I(i++) uniqe identity:   233.019829
-    1.000.000 times array_push($objects, new A()):            208.152056
+    1.000.000 times $objects[] = new A():                      136.29 milliseconds
+    1.000.000 times $objects[] = new B() extends A:            129.66 milliseconds
+    1.000.000 times $objects[] = new C() with constructor:     204.74 milliseconds
+    1.000.000 times $objects[] = new V() with variable:        139.93 milliseconds
+    1.000.000 times $objects[] = new I(i++) uniqe identity:    238.19 milliseconds
+    1.000.000 times array_push($objects, new A()):             239.61 milliseconds
 
 A thousand classes test
 =======================
