@@ -18,7 +18,7 @@ class V { protected $a = 1; }
  * function, because the creation of a class from a varible $className
  * approximately doubles the creation time.
  */
-class ABillionObjectsTest extends \ElmarHinz\PerformanceTestCase
+class MillionObjectsTest extends \ElmarHinz\PerformanceTestCase
 {
 
 	protected $formatA

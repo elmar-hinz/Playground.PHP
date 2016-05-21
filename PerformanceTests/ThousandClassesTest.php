@@ -4,7 +4,7 @@ namespace ElmarHinz\PerformanceTests;
 
 require_once('vendor/autoload.php');
 
-class AThousandClassesTest extends \ElmarHinz\PerformanceTestCase
+class ThousandClassesTest extends \ElmarHinz\PerformanceTestCase
 {
 
 	protected $randId = 0;
