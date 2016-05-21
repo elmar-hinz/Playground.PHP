@@ -58,3 +58,29 @@ PHP7
 
     5.) 3. + execute each of 1000 objects 1000 lines each: 4149 milliseconds
 
+
+Testing environment
+===================
+
+  :Model Name:	MacBook Pro
+  :Model Identifier:	MacBookPro10,2
+  :Processor Name:	Intel Core i5
+  :Processor Speed:	2,5 GHz
+  :Number of Processors:	1
+  :Total Number of Cores:	2
+  :L2 Cache (per Core):	256 KB
+  :L3 Cache:	3 MB
+  :Memory:	8 GB
+  :Storage: 251 GB Flash Storage
+  :PHP5: PHP 5.6.21 (cli)
+  :PHP7: PHP 7.0.6 (cli)
+  :php.ini: Default configuration of Homebrew for the given version of PHP
+
+Exexution
+=========
+
+::
+
+  vendor/bin/phpunit --process-isolation PerformanceTests/ThousandClassesTest.php && cat Reports/Report.txt && rm Reports/Report.txt
+  vendor/bin/phpunit --process-isolation PerformanceTests/MillionObjectsTest.php && cat Reports/Report.txt && rm Reports/Report.txt
+
