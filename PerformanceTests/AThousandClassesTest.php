@@ -12,15 +12,15 @@ class AThousandClassesTest extends \ElmarHinz\PerformanceTestCase
 	protected $classPattern = '/tmp/a1000classes/*/*.php';
 
 	protected $format1
-		= "1.) Read (by file()):                                  %7.2f milliseconds";
+		= "1.) Read (by file()):                                  %4d milliseconds";
 	protected $format2
-		= "2.) 1 + parse (by require_once()):                     %7.2f milliseconds";
+		= "2.) 1. + parse (by require_once()):                    %4d milliseconds";
 	protected $format3
-		= "3.) 2 + initialise each of 1000 classes one time:      %7.2f milliseconds";
+		= "3.) 2. + initialise each of 1000 classes one time:     %4d milliseconds";
 	protected $format4
-		= "4.) 2 + initialise each of 1000 classes 1000 times:    %7.2f milliseconds";
+		= "4.) 2. + initialise each of 1000 classes 1000 times:   %4d milliseconds";
 	protected $format5
-		= "5.) 3. + execute each of 1000 objects 1000 lines each: %7.2f milliseconds";
+		= "5.) 3. + execute each of 1000 objects 1000 lines each: %4d milliseconds";
 
 	public function setUp() {
 		$this->randId = "d" . rand(1000, 1000000);
@@ -50,7 +50,7 @@ class AThousandClassesTest extends \ElmarHinz\PerformanceTestCase
 	{
 		$main = '';
 		for($i = 1; $i <= 1000; $i++) {
-			$main .= sprintf("        \$var=%d;\n", $i, $i);
+			$main .= sprintf("        \$var=%d;\n", $i);
 		}
 		$format = '<?php
 class %s
