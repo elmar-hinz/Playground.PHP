@@ -1,4 +1,11 @@
 {
+    "name": "elmar-hinz/php-playground",
+    "authors": [
+        {
+            "name": "Elmar Hinz",
+            "email": "t3elmar@gmail.com"
+        }
+    ],
     "autoload": {
         "psr-4" : {
             "ElmarHinz\\Tests\\": "Tests/",
