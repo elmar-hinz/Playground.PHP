@@ -1,0 +1,56 @@
+
+ 1000 times with array of length    100
+=======================================
+       []= /pop:      1.11 milliseconds
+       push/pop:      2.12 milliseconds
+    unshift/pop:      3.60 milliseconds
+  unshift/shift:      3.46 milliseconds
+
+ 1000 times with array of length   1000
+=======================================
+       []= /pop:      0.93 milliseconds
+       push/pop:      1.64 milliseconds
+    unshift/pop:     14.37 milliseconds
+  unshift/shift:     19.03 milliseconds
+
+ 1000 times with array of length  10000
+=======================================
+       []= /pop:      1.15 milliseconds
+       push/pop:      2.10 milliseconds
+    unshift/pop:    116.29 milliseconds
+  unshift/shift:    206.20 milliseconds
+
+ 1000 times with array of length 100000
+=======================================
+       []= /pop:      3.41 milliseconds
+       push/pop:      4.44 milliseconds
+
+ 1000 times with array of length    100
+=======================================
+       []= /pop:      9.39 milliseconds
+       push/pop:     15.87 milliseconds
+    unshift/pop:     12.86 milliseconds
+  unshift/shift:     14.86 milliseconds
+
+ 1000 times with array of length   1000
+=======================================
+       []= /pop:      9.83 milliseconds
+       push/pop:     11.73 milliseconds
+    unshift/pop:     23.54 milliseconds
+  unshift/shift:     26.29 milliseconds
+
+ 1000 times with array of length  10000
+=======================================
+       []= /pop:      8.65 milliseconds
+       push/pop:     12.99 milliseconds
+    unshift/pop:    125.27 milliseconds
+  unshift/shift:    221.47 milliseconds
+
+ 1000 times with array of length 100000
+=======================================
+       []= /pop:     10.63 milliseconds
+       push/pop:     13.35 milliseconds
+    unshift/pop:   2848.64 milliseconds
+  unshift/shift:   3251.43 milliseconds
+1.000.000 times $objects[] = new A():                     6748 milliseconds
+1.000.000 times $objects[] = new B() extends A:           6782 milliseconds

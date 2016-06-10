@@ -2,6 +2,9 @@
 
 namespace ElmarHinz;
 
+/**
+ * @codeCoverageIgnore
+ */
 class PerformanceTestCase extends \PHPUnit_Framework_TestCase
 {
 	protected static $_reportFile = 'Reports/Report.txt';

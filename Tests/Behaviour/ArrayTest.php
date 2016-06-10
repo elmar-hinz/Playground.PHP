@@ -4,6 +4,16 @@ namespace ElmarHinz\BehaviourTests;
 
 class ArrayTest extends \PHPUnit_Framework_TestCase
 {
+
+	/**
+	 * @test
+	 */
+	public function returnFromNoneExistingKey() {
+		$array = [];
+		$result = $array['nope'];
+		$this->assertSame(null, $result);
+	}
+
 	/**
 	 * @test
 	 */
